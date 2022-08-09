@@ -163,7 +163,7 @@
     <!-- Gallery -->
     <section id="gallery">
       <div class="container">
-        <div class="row text-center mb-3">
+        <div class="row text-center mb-4">
           <div class="col">
             <h2>Gallery</h2>
           </div>
@@ -211,6 +211,48 @@
           </div>
         </div>
       </div>
+
+      <!-- Kartun -->
+      <section id="kartun">
+        <div class="container">
+          <div class="row text-center mb-4">
+            <div class="col">
+              <h2>Cartoon</h2>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-6 col-lg-4 mb-3">
+              <div class="kartun-box">
+                <h4 class="kartun-name">Tayo</h4>
+                <img src="img/Kartun/Tayo.png" alt="Tayo" class="kartun-img" />
+                <a href="#" class="btn btn-light kartun-detail-button">Show Details</a>
+              </div>
+            </div>
+            <div class="col-md-6 col-lg-4 mb-3">
+              <div class="kartun-box">
+                <h4 class="kartun-name">Kiko</h4>
+                <img src="img/Kartun/Kiko.png" alt="Kiko" class="kartun-img" />
+                <a href="#" class="btn btn-light kartun-detail-button">Show Details</a>
+              </div>
+            </div>
+            <div class="col-md-6 col-lg-4 mb-3">
+              <div class="kartun-box">
+                <h4 class="kartun-name">Riko</h4>
+                <img src="img/Kartun/Riko.png" alt="Riko" class="kartun-img" />
+                <a href="#" class="btn btn-light kartun-detail-button">Show Details</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!--Akhir Kartun  -->
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+        <path
+          fill="#ffffff"
+          fill-opacity="1"
+          d="M0,96L34.3,122.7C68.6,149,137,203,206,224C274.3,245,343,235,411,208C480,181,549,139,617,138.7C685.7,139,754,181,823,181.3C891.4,181,960,139,1029,133.3C1097.1,128,1166,160,1234,170.7C1302.9,181,1371,171,1406,165.3L1440,160L1440,320L1405.7,320C1371.4,320,1303,320,1234,320C1165.7,320,1097,320,1029,320C960,320,891,320,823,320C754.3,320,686,320,617,320C548.6,320,480,320,411,320C342.9,320,274,320,206,320C137.1,320,69,320,34,320L0,320Z"
+        ></path>
+      </svg>
     </section>
     <!-- Akhir Gallery -->
 
@@ -327,6 +369,16 @@
             console.log("Success!", response);
           })
           .catch((error) => console.error("Error!", error.message));
+      });
+    </script>
+
+    <script type="text/javascript" src="js/vanilla-tilt.min.js"></script>
+    <script type="text/javascript">
+      VanillaTilt.init(document.querySelectorAll(".kartun-box"), {
+        max: 35,
+        speed: 400,
+        scale: 1.1,
+        glare: true,
       });
     </script>
   </body>
